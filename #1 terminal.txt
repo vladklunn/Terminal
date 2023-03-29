@@ -30,9 +30,9 @@ vim file_new.sh
 
 		#!/bin/bash
 		cd folder_1
-		mkdir dir_{1..3\}
+		mkdir dir_{1..3}
 		cd dir_1
-		touch t_\{1..3\}.txt  j1.json  j2.json
+		touch t_{1..3}.txt  j1.json  j2.json
 		mkdir d_{1..3}
 		ls -la 
 		mv t_1.txt d_1/t_1.txt
