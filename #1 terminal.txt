@@ -1,54 +1,42 @@
-{\rtf1\ansi\ansicpg1251\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+1. Looking where are me 					pwd;
+2. Create folder 						mkdir first_terminal; 
+3. Go in folder   						cd first_terminal ;
+4. Create 3 folder 						mkdir lesson_{1..3};
+5. Go in folder							cd lesson_1 ;
+7. Create 5 files  						touch file_(1..3).txt ex_4.json ex_5.json 
+8. Create 3 folders 						mkdir folder_{1..3};
+9. Show folder content						ls -la;		
+10. Create and fill file  					Cat  > file_1.txt;
+11. Write in file  						12345 
+								Qwerty
 
-\f0\fs24 \cf0 1. Looking where are me 					pwd ;\
-2. Create folder 						mkdir first_terminal ; \
-3. Go in folder   						cd first_terminal ;\
-4. Create 3 folder 						mkdir lesson_\{1..3\} ;\
-5. Go in folder							cd lesson_1 ;\
-7. Create 5 files  						touch file_(1..3).txt  ex_4.json ex_5.json ;\
-8. Create 3 folders 						mkdir folder_\{1..3\} ;\
-9. Show folder content					ls -la ;		\
-10. Create and fill file  					Cat  > file_1.txt ;\
-11. Write in file  							12345 \
-									Qwerty\
-12. Save and exit 						Ctrl+C :\
-13. Move out of the folder one level up		cd .. ;\
-14. Move 2 files in folder  					mv file_3.txt less_2/topic_3.txt ;\
-									mv ex_4.json folder_2/ex_4.json ;\
-15. Copy 2 files in folders 					cp topic_2.txt folder_3/topic_2.txt ;\
-									cp ex_5.json folder_3/ex_5.json ;\
-16. Find file by name 					find -name file_3.txt ;\
-17. Find string in files		   			grep  \{\{search string\}\} ;\
-18. Show (1,2,3), first strings 				head -2 file_1 ;\
-19. Show (1,2,3), last strings 				tail. -2 file_1.txt ;\
-15. Show content of the large file  			Less file_1.txt ;\
-16. Show date and time 					Date . \
-\
-17. Send http request on server 			curl \'91http://162.55.220.72:5005'\
-18. Create script for 3,4,5,6,7,8,13\
-\
-		#!/bin/bash\
-		cd folder_1\
-		mkdir dir_\{1..3\}\
-		cd dir_1\
-		touch t_\{1..3\}.txt  j1.json  j2.json\
-		mkdir d_\{1..3\}\
-		ls -la \
-		mv t_1.txt d_1/t_1.txt\
-		mv t_2.txt d_1/t_2.txt\
-		echo \'91done\'92nt  \
-\
-\
-\
-\
-\
-\
-\
-\
-\
-}
+12. Save and exit 						Ctrl+C;
+13. Move out of the folder one level up				cd .. ;
+14. Move 2 files in folder  					mv file_3.txt less_2/topic_3.txt;
+								mv ex_4.json folder_2/ex_4.json;
+15. Copy 2 files in folders 					cp topic_2.txt folder_3/topic_2.txt;
+								cp ex_5.json folder_3/ex_5.json;
+16. Find file by name 						find -name file_3.txt;
+17. Find string in files		   			grep  \{\{search string\}\};
+18. Show (1,2,3), first strings 				head -2 file_1;
+19. Show (1,2,3), last strings 					tail. -2 file_1.txt;
+15. Show content of the large file  				Less file_1.txt;
+16. Show date and time 						Date . 
+
+17. Send http request on server 				curl '91http://162.55.220.72:5005'
+18. Create script for 3,4,5,6,7,8,13
+touch file_new.sh
+vim file_new.sh 
+
+		#!/bin/bash
+		cd folder_1
+		mkdir dir_{1..3\}
+		cd dir_1
+		touch t_\{1..3\}.txt  j1.json  j2.json
+		mkdir d_{1..3}
+		ls -la 
+		mv t_1.txt d_1/t_1.txt
+		mv t_2.txt d_1/t_2.txt
+		echo 'done'nt
+		
+bash file_new.sh
