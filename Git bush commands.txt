@@ -1,43 +1,30 @@
-{\rtf1\ansi\ansicpg1251\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww20680\viewh14440\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Cd  				
-\fs28 sends to folder\
-mkdir			create folder	\
-cat  				show the contents of the specified file\
-cat > 			"file name" after expects what will be entered into the file\
-				to exit edit mode, press "Ctrl C"\
-cat >> 			"file name" edit file, appended\
-cat > 			"file name" overwrites an already written file\
-touch 			create file \
-nano 			text editor\
-vim 				text editor\
-pwd				shows where the folder is created\
- 			 	copy file \
-rm				delete file \
-mv				move file \
-ls 				show folders where we \
-file 				will let you know the type of data inside the folders \
-grep 			file search by pattern\
-xargs			utility for generating a list of arguments and executing a command \
-head      			show  (n strings) from at first \
-tail 				show  (n	strings) from the end \
-less 			show long file content\
-find 				find file or folder \
-date 			show data and time \
-echo 			show text 			\
-curl 				send request (need IP)\
---help			help in git \
+
+  				
+cd 			go to folder
+mkdir			create folder	
+cat  			show the contents of the specified file
+cat > 			"file name" after expects what will be entered into the file
+			to exit edit mode, press "Ctrl C"
+cat >> 			"file name" edit file, appended
+cat > 			"file name" overwrites an already written file
+touch 			create file 
+nano 			text editor
+vim 			text editor
+pwd			shows where the folder is created
+cp 			copy file 
+rm			delete file 
+mv			move file 
+ls 			show folders where we 
+file 			will let you know the type of data inside the folders 
+grep 			file search by pattern
+xargs			utility for generating a list of arguments and executing a command 
+head      		show  (n strings) from at first 
+tail 			show  (n strings) from the end 
+less 			show long file content
+find 			find file or folder 
+date 			show data and time 
+echo 			show text 			
+curl 			send request (need IP)
+--help			help in git 
 history			history in git  
-\fs24 \
-
-\fs28 \
-\
-\
-\
-\
-}
