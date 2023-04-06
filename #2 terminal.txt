@@ -1,0 +1,110 @@
+
+
+1. create folder dir_1									mkdir dir_1
+2. go in dir_1										cd dir_1
+3. create folder inner_dir_1								mkdir inner_dir_1
+4. looking where are me 									pwd
+5. be in dir_1 create file tf_1.txt							touch tf_1.txt 
+6. be in  dir_1 with "cat" create tf_2.txt with strings:				cat > tf_2.txt 
+- the first 1- the second 2- the third 3						the first 1
+												the second 2
+												the third 3
+												Ctrl+c
+
+7. Go in inner_dir_1									cd inner_dir_1
+8. With cat make txt file tf_3.txt with another strings				cat > tf_3.txt 
+ 												one 
+												two
+												three 
+												four 
+												five 
+												six 
+												Ctrl+c
+												
+9. With cat add in tf_3.txt string “the second 2”					cat >> tf_3.txt
+												the second 2
+												Ctrl+c
+												check cat tf_3.txt											 
+
+												
+10. With cat add in tf_3.txt string “the sec 2”					cat >> tf_3.txt 
+												the sec 2 
+												Ctrl+c
+												check cat tf_3.txt
+
+11. With cat add in tf_2.txt string “the sec 3”					cat >> /path/dir_1/tf_2.txt
+												the sec 3
+												Ctrl+c
+
+12. With cat add in tf_3.txt string “the SeCoNd 2”					cat >> tf_3.txt 
+												the seConD 2 
+												Ctrl+c		
+
+13. With cat add in t2_3.txt string “the seConD 2”					cat >> /path/dir_1/tf_2.txt
+												the seConD 2
+												Ctrl+c
+												
+14. Create text file  tf_4.txt what will have 15 string				cat >tf_4.txt
+												1...
+												15
+												Ctrl+C
+15. Create text file  tf_5.txt what will have 13 string				cat >tf_5.txt
+												1...
+												13
+												Ctrl+C
+
+16. output all files from folder 							ls -la
+17. Out from inner_dir_1									cd ..
+18. Output all files tf_3.txt in terminal						cat /path/inner_dir_1/tf_3.txt
+
+19. Find path to file tf_4.txt								find -name tf_4.txt
+												(all path) realpath tf_4.txt
+												
+20. Clear file tf_4.txt without deleting the file					echo -n > ./inner_dir_1/tf_4.txt
+												> tf_4.txt (crete file)
+
+21. find path to the files, which have  “tf” in name				find -name "*tf*"
+
+22. find path to the files, which have  “tf” in name letters in any case	find -iname "*tf*"
+
+23. find string in files which have “sec” in folder 				grep "sec" *
+
+24. find string in files which have  “sec” in name letters in any case in folder		grep -i "sec" *
+
+25. find string in files which have only combination “sec” in folder 				grep -w "sec" *
+
+26. find string in files which have only combination “sec” in name letters in any case in folder	grep -w -i "sec" *
+
+27. find path to the files, which have  “second” in folder 							grep "second" *
+
+28. find path to the files, which have  “second” in name letters in any case in folder			grep -i "second" *
+
+29. find path to the files, which have “second” in all folders below 						grep -r "second"
+
+30. find path and name of file in string which have combination “second” in folder 			grep -s -l /d/all path/*
+
+31. find all strings which haven't combination “second”								grep -r -v -e "second"
+																	or
+							grep -r -v -e "second" /d/QA_33/hw2/group_33/HW_2_TERMINAL/dir_1/(+show all path)					
+
+32. find only name and path to files which haven't “second”				grep -r -l -v -e "second" /d/all path/dir_1/
+
+33. output in terminal 4 last strings any text files 								tail -n4 tf_2.txt
+
+34. output in terminal 4 first strings any text files								head -n4 tf_2.txt							
+
+35. (one line command), create folder and create text file with content 					cat > cat.txt | mkdir dir_3
+
+36. (one line command), move in any one folder text files, which have “sec”		grep -l -r sec | xargs mv -t dir_5
+
+37. (one line command), copy in any one folder text files, which have “sec”		grep -l -r sec | xargs cp -t dir_3
+
+38. (one line command), find all strings with “sec” in all text files, copy and past this strings in new text file 
+
+grep -r -i sec >> sec.txt
+
+39. (one line command), delete text file which have “sec”				grep -lr sec | xargs rm
+
+40. output in terminal “Good job!!”								echo "Good job"
+
+
